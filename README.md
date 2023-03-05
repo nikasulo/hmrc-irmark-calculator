@@ -10,18 +10,29 @@ Compile the Java code into Java class files by running the following in the root
 
 ### Step 2
 
+Create the build/ directory
+
+`mkdir -p build/uk/gov/hmrc/mark`
+
+### Step 3
+
 Move the class files into the build directory
 `mv *.class build/uk/gov/hmrc/mark`
 
-### Step 3
+### Step 4
 
 Bundle the files into a .jar file
 `jar cfv markcalc.jar build/uk/gov/hmrc/mark`
 
-### Step 4
+### Step 5
 
 Move the new .jar file into the lib/ directory
 `mv markcalc.jar lib/`
+
+### Step 6
+
+Delete the build directory
+`rm -rf build/`
 
 #### Note: All commands must be run in the root of the project
 
