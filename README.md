@@ -6,7 +6,7 @@ Building the project comprises of four steps
 
 Compile the Java code into Java class files by running the following in the root of the project directory
 
-`javac -cp '.:lib/jce-jdk13-114.jar:lib/xmlsec-1.4.1.jar:lib/xalan_enhanced.jar:lib/commons-logging-1.1.1.jar' *.java`
+`javac -cp 'lib/dependencies/*' java-src/*.java`
 
 ### Step 2
 
@@ -17,26 +17,32 @@ Create the build/ directory
 ### Step 3
 
 Move the class files into the build directory
-`mv *.class build/uk/gov/hmrc/mark`
+`mv java-src/*.class build/uk/gov/hmrc/mark`
 
 ### Step 4
 
 Bundle the files into a .jar file
-`jar cfv markcalc.jar build/uk/gov/hmrc/mark`
+`cd build/ && jar cfv markcalc.jar uk/gov/hmrc/mark && cd -`
 
 ### Step 5
 
 Move the new .jar file into the lib/ directory
-`mv markcalc.jar lib/`
+`mv build/markcalc.jar lib/dependencies/`
 
 ### Step 6
 
 Delete the build directory
 `rm -rf build/`
 
-#### Note: All commands must be run in the root of the project
+### Step 7
 
-After the new jar file is created, you may move the lib/ directory into the destination project
+Update and add new tests to cover changes
+
+### Step 8
+
+Bump the version of the gem in the `.gemspec` file
+
+#### Note: All commands must be run in the root of the project
 
 ## Dependencies
 
