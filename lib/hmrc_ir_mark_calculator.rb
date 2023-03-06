@@ -52,7 +52,7 @@ class HmrcIrMarkCalculator
   def handle_success(result)
     self.class.logger.info("Output of the IRmark for file #{file_path} is #{result}")
 
-    { result: result, success: false }
+    { result: result, success: true }
   end
 
   def cmd
