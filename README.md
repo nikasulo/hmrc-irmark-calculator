@@ -40,10 +40,14 @@ Update and add new tests to cover changes
 
 ### Step 8
 
+Run specs
+
+### Step 8
+
 Bump the version of the gem in the `.gemspec` file
 
 #### Note: All commands must be run in the root of the project
 
 ## Dependencies
 
-You will need JAVA 1.4 or later installed.
+You will need Java 17.0.1 or later installed.
