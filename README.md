@@ -40,7 +40,7 @@ Update and add new tests to cover changes
 
 Run specs `rake test`
 
-### Step 8
+### Step 9
 
 Bump the version of the gem in the `.gemspec` file
 
