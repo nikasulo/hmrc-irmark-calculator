@@ -40,7 +40,7 @@ Update and add new tests to cover changes
 
 ### Step 8
 
-Run specs
+Run specs `rake test`
 
 ### Step 8
 
