@@ -1,7 +1,5 @@
 # Building the project
 
-Building the project comprises of four steps
-
 ### Step 1
 
 Compile the Java code into Java class files by running the following in the root of the project directory
